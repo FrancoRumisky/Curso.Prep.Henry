@@ -28,8 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  var valor = 'str'
-  return valor;
+  return "Henry";
   
 }
 
@@ -66,7 +65,7 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x = y){
+  if (x === y){
     return true;
   } return false;
 }
@@ -75,8 +74,8 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1 = str2) {
-    return true;
+  if(str1 === str2){
+    return true
   }
    return false;
 }
@@ -161,8 +160,7 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  haciaarriba = Math.floor (num)
-  return haciaarriba; 
+  return Math.ceil(num) 
 }
 
 function numeroRandom() {
@@ -197,21 +195,21 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return nombre + '' + apellido
+  return (nombre + ' ' + apellido)
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'Hola, ' + nombre +'!'
+  return 'Hola ' + (nombre) +'!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
   var area = alto * ancho
-  return area
+  return area;
 }
 
 
@@ -219,7 +217,7 @@ function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
   var perimetro = lado * 4
-  return perimetro
+  return perimetro;
 }
 
 
@@ -227,7 +225,7 @@ function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
 var area = (base * altura) / 2
-return area
+return area;
 }
 
 
@@ -235,7 +233,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  return euro * 1.2
+  return euro * 1.2;
 }
 
 
@@ -248,9 +246,9 @@ function esVocal(letra){
   if (letra.length > 1){
     return "Dato incorrecto"
   }
-  else if (letra=== a || letra === e || letra === i || letra === o || letra == u){
+  if (letra=== 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra == 'u'){
     return "Es vocal"
-  } return "Dato incorrecto"
+  } return "Dato incorrecto";
 }
 
 

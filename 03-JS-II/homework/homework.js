@@ -147,7 +147,7 @@ function operadoresLogicos(num1, num2, num3) {
     return ++num3;
   }
   else if (num1 > num2 && num1 > num3 && num1 > 0){
-    return "Numero 1 es mayor y positivo";
+    return "Número 1 es mayor y positivo";
   }
   else {
     return false;
@@ -185,9 +185,9 @@ function tablaDelSeis(){
   //Escribe tu código aquí   
   const arraytabla = []
   for (i = 0; i < 11; i++){
-    arraytabla.push(i*6) 
-    console.log(arraytabla[i])
+    arraytabla.push(i*6)  
   }
+  return arraytabla;
 }
 
 function tieneTresDigitos(numero){
